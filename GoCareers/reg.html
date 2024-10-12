@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2eaebf;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .gender-label1{
+            display: flex;
+            margin-right: 282px;
+        }
+        .gender-label2{
+            display: flex;   
+            margin-right: 300px;    
+        }
+        
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 400px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+        .back{
+            text-align: right;
+        }
+
+        .back a{
+            text-decoration: solid;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="phpconn.php", method="post">
+        <h2>Sign Up</h2>
+
+        <label for="username">Full Name:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+        <label for="username">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your Email" autofocus required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="pwd" placeholder="Enter your password" required>
+
+        <label for="num">Phone:</label>
+        <input  id="num" name="num" required>
+
+        <label for="dob">Date of birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label>Gender:</label>
+        <div class="gender-label1">
+            <label class="gender-label" for="male">Male </label><br>
+            <input type="radio" id="male" name="gender" value="Male">
+        </div>
+        <div class="gender-label2">
+            <label class="gender-label" for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="Female">
+        </div>
+
+        <label for="education">Highest Education Level:</label>
+        <select id="education" name="education" required>
+            <option value="6th-9th Class">6th-9th Class</option>
+            <option value="10th Class">10th Class</option>
+            <option value="11th Class">11th Class</option>
+            <option value="12th Class">12th Class</option>
+            <option value="Graduate Degree / Diploma">Graduate Degree / Diploma</option>
+            <option value="Postgraduate Degree">Postgraduate Degree</option>
+            <option value="Working Professional">Working Professional</option>
+        </select>
+
+        <label for="interest">Area Of Interest:</label>
+        <select id="interest" name="interest" required>
+            <option value="Art">Art</option>
+            <option value="Cooking">Cooking</option>
+            <option value="Foreign languages">Foreign languages</option>
+            <option value="Photography">Photography</option>
+            <option value="Sports">Sports</option>
+            <option value="Blogging">Blogging</option>
+            <option value="Dance">Dance</option>
+            <option value="Writing">Writing</option>
+            <option value="Designing">Designing</option>
+            <option value="Gaming">Gaming</option>
+            <option value="Reading">Reading</option>
+            <option value="Yoga">Yoga</option>
+            <option value="Community">Community</option>
+            <option value="Listening to music">Listening to music</option>
+            <option value="Musical instruments">Musical instruments</option>
+            <option value="Woodworking">Woodworking</option>
+            <option value="Golf">Golf</option>
+            <option value="History">History</option>
+            <option value="Jewellery design">Jewellery design</option>
+            <option value="Martial arts">Martial arts</option>
+            <option value="Quilting">Quilting</option>
+            <option value="Volunteering">Volunteering</option>
+            <option value="Travel">Travel</option>
+            <option value="Exercise">Exercise</option>
+        </select>
+        <button class="butt1" type="submit" name="submit">CREATE NEW ACCOUNT</button>
+        <br><br><div class="back"><a href="signin.html">Back to Login</a></div>
+    </form>
+</body>
+</html>
